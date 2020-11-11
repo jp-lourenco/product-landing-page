@@ -13,7 +13,6 @@ import {
     WelcomeImage,
     BuyButton,
     Background,
-    ImageContainer,
 } from './styles/header';
 
 export default function Header({ children, ...restProps }) {
@@ -50,13 +49,6 @@ Header.Logo = function HeaderLogo({ ...restProps }) {
 
 Header.WelcomeImage = function HeaderWelcomeImage({ ...restProps }) {
     return <WelcomeImage {...restProps} />;
-};
-
-Header.ImageContainer = function HeaderImageContainer({
-    children,
-    ...restProps
-}) {
-    return <ImageContainer {...restProps}>{children}</ImageContainer>;
 };
 
 Header.Art = function HeaderArt({ ...restProps }) {

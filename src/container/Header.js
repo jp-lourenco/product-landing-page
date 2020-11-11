@@ -30,9 +30,8 @@ const HeaderContainer = () => {
                         </Header.SubTitle>
                         <Header.BuyButton>Buy product</Header.BuyButton>
                     </Header.WelcomeText>
-                    <Header.ImageContainer>
-                        <Header.WelcomeImage src={'assets/images/hero.png'} />
-                    </Header.ImageContainer>
+
+                    <Header.WelcomeImage src={'assets/images/hero.png'} />
                 </Header.WelcomeContainer>
             </Header.Container>
         </Header>
