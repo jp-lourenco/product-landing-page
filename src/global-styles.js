@@ -8,7 +8,7 @@ html, body {
     line-height: 26px;
     font-weight: 400;
     font-size: 16px;
-     
+    overflow-x: hidden;
 }
 body, h1, h2, p {
     padding: 0;
@@ -19,3 +19,8 @@ body, h1, h2, p {
     //border: 1px solid red;
 }
 `;
+
+//    --breakpoint-sm: 576px;
+//    --breakpoint-md: 768px;
+//    --breakpoint-lg: 992px;
+//    --breakpoint-xl: 1200px
