@@ -1,8 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Background = styled.div`
-    display: flex;
-    flex-direction: column;
     background-color: #fffacd;
 `;
 
@@ -11,6 +9,11 @@ export const Container = styled.div`
     flex-direction: column;
     max-width: 1140px;
     margin: 0 auto;
+
+    @media (max-width: 992px) {
+        max-width: 768px;
+        min-width: 390px;
+    }
 `;
 
 export const Nav = styled.div`
@@ -22,6 +25,13 @@ export const Nav = styled.div`
     padding: 0 15px;
     width: 100%;
     z-index: 1;
+`;
+
+export const Logo = styled.img`
+    height: 80px;
+    width: 80px;
+    float: left;
+    cursor: pointer;
 `;
 
 export const Menu = styled.div`
@@ -38,25 +48,11 @@ export const MenuButton = styled.a`
     text-decoration: none;
     padding: 15px;
     cursor: pointer;
-`;
 
-export const Logo = styled.img`
-    height: 80px;
-    width: 80px;
-    float: left;
-    cursor: pointer;
-`;
-
-export const Title = styled.h1`
-    font-size: 70px;
-    margin-bottom: 20px;
-    margin-top: 100px;
-    line-height: 90px;
-    font-weight: 700;
-    font-family: inherit;
-
-    @media (max-width: 1100px) {
-        margin-top: 0;
+    @media screen and (max-width: 1092px) {
+        &:not(:first-child) {
+            display: none;
+        }
     }
 `;
 
@@ -64,27 +60,65 @@ export const Art = styled.div`
     position: absolute;
     z-index: 0;
     background: orange none repeat scroll 0 0;
-    right: 0;
-    bottom: 0;
+    right: -70px;
+    bottom: -70px;
     height: 180%;
     width: 100%;
     border-radius: 145px;
     transform: translate(35%, -30%) rotate(-35deg);
 
-    @media (max-width: 1100px) {
-        height: 0%;
-        width: 0%;
+    @media (max-width: 992px) {
+        right: 0;
+        bottom: 0;
+        height: 155%;
+    }
+`;
+
+export const WelcomeContainer = styled.div`
+    display: flex;
+    flex: 1;
+    height: 590px;
+    justify-content: space-between;
+    z-index: 1;
+
+    @media (max-width: 992px) and (min-width: 769px) {
+        height: 400px;
+    }
+
+    @media (max-width: 768px) {
+        align-items: center;
+        flex-direction: column;
+        min-height: 770px;
+        justify-content: center;
     }
 `;
 
 export const WelcomeText = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 530px;
+    margin-top: 50px;
+    max-width: 540px;
     float: left;
     padding: 30px 15px;
     justify-content: flex-start;
     z-index: 1;
+
+    @media (max-width: 768px) {
+        margin: 0px;
+    }
+`;
+
+export const Title = styled.h1`
+    font-size: 70px;
+    margin-bottom: 20px;
+    line-height: 90px;
+    font-weight: 700;
+    font-family: inherit;
+
+    @media (max-width: 992px) {
+        font-size: 50px;
+        line-height: 50px;
+    }
 `;
 
 export const SubTitle = styled.p`
@@ -94,6 +128,11 @@ export const SubTitle = styled.p`
     letter-spacing: 1px;
     margin-bottom: 20px;
     padding-left: 5px;
+
+    @media (max-width: 992px) {
+        font-size: 16px;
+        line-height: 16px;
+    }
 `;
 
 // Create the keyframes
@@ -123,18 +162,11 @@ export const BuyButton = styled.button`
     font-weight: 700;
     border-radius: 2px;
     background-size: 200% 200%;
-    transition: 0.3s;
+    transition: 0.1s;
 
     &:hover {
         animation: ${bruh} 3s linear infinite;
     }
-`;
-
-export const ImageContainer = styled.div`
-    display: flex;
-    height: 590px;
-    width: 610px;
-    justify-content: center;
 `;
 
 // Create the keyframes
@@ -147,22 +179,20 @@ const jump = keyframes`
 export const WelcomeImage = styled.img`
     position: relative;
     width: 370px;
+    margin-right: 75px;
     max-height: 575px;
     height: auto;
     animation: ${jump} 2s ease-in-out infinite;
 
-    @media (max-width: 1100px) {
+    @media (max-width: 992px) {
         margin-right: 0;
+        width: 250px;
+        max-height: 390px;
     }
-`;
 
-export const WelcomeContainer = styled.div`
-    display: flex;
-    z-index: 1;
-    justify-content: space-between;
-
-    @media (max-width: 1100px) {
-        align-items: center;
-        flex-direction: column;
+    @media (max-width: 1200px) and (min-width: 993px) {
+        margin-right: 75px;
+        width: 330px;
+        max-height: 515px;
     }
 `;
