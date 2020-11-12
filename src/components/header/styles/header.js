@@ -68,8 +68,8 @@ export const Art = styled.div`
     transform: translate(35%, -30%) rotate(-35deg);
 
     @media (max-width: 992px) {
-        right: 0;
-        bottom: 0;
+        right: -40px;
+        bottom: 50px;
         height: 155%;
     }
 `;
