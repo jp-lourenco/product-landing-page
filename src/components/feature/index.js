@@ -39,18 +39,18 @@ Feature.Item = function FeatureItem({ children, ...restProps }) {
     const [flag, setFlag] = useState(true);
 
     const scroll = useCallback(() => {
-        setScrollPosition(window.pageYOffset);
-        console.log(scrollPosition);
+        if (window.pageYOffset > 374) {
+            setScrollPosition(window.pageYOffset);
+        }
     }, []);
 
     useEffect(() => {
         window.addEventListener('scroll', scroll);
-    }, []);
+    }, [scroll]);
 
     if (scrollPosition > 375 && flag) {
-        window.removeEventListener('scroll', scroll);
-        console.log('remove');
         setFlag(false);
+        window.removeEventListener('scroll', scroll);
     }
 
     return (
