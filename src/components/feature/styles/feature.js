@@ -76,6 +76,11 @@ export const ContainerItem = styled.div`
     }
 `;
 
+const opacityOn = keyframes`
+    from {opacity: 0;}
+  to {opacity: 1;}
+`;
+
 export const Item = styled.div`
     display: flex;
     flex-direction: column;
@@ -84,6 +89,9 @@ export const Item = styled.div`
     padding: 0 15px;
     justify-content: center;
     align-items: center;
+    animation: ${opacityOn} 2s linear 1;
+    animation-play-state: ${({ scrollPosition }) =>
+        scrollPosition > 374 ? 'running' : 'paused'};
 `;
 
 export const IconContainer = styled.div`

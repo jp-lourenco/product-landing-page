@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
     Container,
     Title,
@@ -23,7 +23,6 @@ Feature.Title = function FeatureTitle({ children, ...restProps }) {
 Feature.SubTitle = function FeatureSubTitle({ children, ...restProps }) {
     return <SubTitle {...restProps}>{children}</SubTitle>;
 };
-
 Feature.Span = function FeatureSpan({ ...restProps }) {
     return <Span {...restProps} />;
 };
@@ -36,7 +35,29 @@ Feature.ContainerItem = function FeatureContainerItem({
 };
 
 Feature.Item = function FeatureItem({ children, ...restProps }) {
-    return <Item {...restProps}>{children}</Item>;
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [flag, setFlag] = useState(true);
+
+    const scroll = useCallback(() => {
+        setScrollPosition(window.pageYOffset);
+        console.log(scrollPosition);
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener('scroll', scroll);
+    }, []);
+
+    if (scrollPosition > 375 && flag) {
+        window.removeEventListener('scroll', scroll);
+        console.log('remove');
+        setFlag(false);
+    }
+
+    return (
+        <Item scrollPosition={scrollPosition} {...restProps}>
+            {children}
+        </Item>
+    );
 };
 
 Feature.FeatureText = function FeatureFeatureText({ children, ...restProps }) {
