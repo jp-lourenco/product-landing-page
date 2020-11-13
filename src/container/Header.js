@@ -8,8 +8,10 @@ const HeaderContainer = () => {
                 <Header.Nav>
                     <Header.Logo src={'assets/images/flooop.png'} />
                     <Header.Menu>
-                        <Header.MenuButton>Home</Header.MenuButton>
-                        <Header.MenuButton>Features</Header.MenuButton>
+                        <Header.MenuButton href="#home">Home</Header.MenuButton>
+                        <Header.MenuButton href="#features">
+                            Features
+                        </Header.MenuButton>
                         <Header.MenuButton>About</Header.MenuButton>
                         <Header.MenuButton>Product</Header.MenuButton>
                         <Header.MenuButton>Faq</Header.MenuButton>

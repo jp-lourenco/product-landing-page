@@ -76,9 +76,28 @@ export const ContainerItem = styled.div`
     }
 `;
 
-const opacityOn = keyframes`
-    from {opacity: 0;}
-  to {opacity: 1;}
+const opacityOn1 = keyframes`
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+  100% {opacity: 1;}
+`;
+
+const opacityOn2 = keyframes`
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+  100% {opacity: 1;}
+`;
+
+const opacityOn3 = keyframes`
+    0% {opacity: 0;}
+    60% {opacity: 0;}
+  100% {opacity: 1;}
+`;
+
+const opacityOn4 = keyframes`
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+  100% {opacity: 1;}
 `;
 
 export const Item = styled.div`
@@ -89,9 +108,26 @@ export const Item = styled.div`
     padding: 0 15px;
     justify-content: center;
     align-items: center;
-    animation: ${opacityOn} 2s linear 1;
-    animation-play-state: ${({ scrollPosition }) =>
-        scrollPosition > 374 ? 'running' : 'paused'};
+    &:nth-child(1) {
+        animation: ${opacityOn1} 3s linear 1;
+        animation-play-state: ${({ scrollPosition }) =>
+            scrollPosition > 374 ? 'running' : 'paused'};
+    }
+    &:nth-child(2) {
+        animation: ${opacityOn2} 3s linear 1;
+        animation-play-state: ${({ scrollPosition }) =>
+            scrollPosition > 374 ? 'running' : 'paused'};
+    }
+    &:nth-child(3) {
+        animation: ${opacityOn3} 3s linear 1;
+        animation-play-state: ${({ scrollPosition }) =>
+            scrollPosition > 374 ? 'running' : 'paused'};
+    }
+    &:nth-child(4) {
+        animation: ${opacityOn4} 3s linear 1;
+        animation-play-state: ${({ scrollPosition }) =>
+            scrollPosition > 374 ? 'running' : 'paused'};
+    }
 `;
 
 export const IconContainer = styled.div`
