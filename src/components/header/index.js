@@ -13,6 +13,7 @@ import {
     WelcomeImage,
     BuyButton,
     Background,
+    ArtOverflow,
 } from './styles/header';
 
 export const StickyContext = createContext();
@@ -86,7 +87,11 @@ Header.WelcomeImage = function HeaderWelcomeImage({ ...restProps }) {
 };
 
 Header.Art = function HeaderArt({ ...restProps }) {
-    return <Art {...restProps} />;
+    return (
+        <ArtOverflow>
+            <Art {...restProps} />
+        </ArtOverflow>
+    );
 };
 
 Header.WelcomeText = function HeaderWelcomeText({ children, ...restProps }) {
