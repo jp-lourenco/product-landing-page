@@ -9,6 +9,7 @@ export const Container = styled.div`
     flex-direction: column;
     max-width: 1140px;
     margin: 0 auto;
+    padding-top: ${({ sticky }) => sticky && '80px'};
 
     @media (max-width: 992px) {
         max-width: 768px;
@@ -19,12 +20,20 @@ export const Container = styled.div`
 export const Nav = styled.div`
     display: flex;
     flex: 1;
-    align-self: center;
+    align-items: center;
     justify-content: space-between;
     height: 56px;
-    padding: 0 15px;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
+    padding: 0 15px;
+    left: 0;
+    position: ${({ sticky }) => (sticky ? 'fixed' : 'relative')};
+    top: ${({ sticky }) => sticky && 0};
+    box-shadow: ${({ sticky }) =>
+        sticky && '0px 0px 18px 1px rgba(0, 0, 0, 0.2)'};
+    background-color: ${({ sticky }) => sticky && '#fff'};
+    padding-left: ${({ sticky }) => sticky && '90px'};
+    padding-right: ${({ sticky }) => sticky && '90px'};
 `;
 
 export const Logo = styled.img`
@@ -44,10 +53,11 @@ export const Menu = styled.div`
 export const MenuButton = styled.a`
     font-size: 15px;
     font-weight: 700;
-    color: #fff;
+    color: ${({ sticky }) => (sticky ? '#444' : '#fff')};
     text-decoration: none;
     padding: 15px;
     cursor: pointer;
+    z-index: 11;
 
     @media screen and (max-width: 1092px) {
         &:not(:first-child) {
@@ -60,8 +70,8 @@ export const Art = styled.div`
     position: absolute;
     z-index: 0;
     background: orange none repeat scroll 0 0;
-    right: -70px;
-    bottom: -70px;
+    right: 0px;
+    bottom: 0px;
     height: 180%;
     width: 100%;
     border-radius: 145px;
