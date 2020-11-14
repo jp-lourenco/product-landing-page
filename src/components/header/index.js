@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, createContext, useContext } from 'react';
 import {
     Container,
     Nav,
@@ -15,12 +15,34 @@ import {
     Background,
 } from './styles/header';
 
+export const StickyContext = createContext();
+
 export default function Header({ children, ...restProps }) {
     return <Background {...restProps}>{children}</Background>;
 }
 
 Header.Container = function HeaderContainer({ children, ...restProps }) {
-    return <Container {...restProps}>{children}</Container>;
+    const [sticky, setSticky] = useState(false);
+
+    window.onscroll = function () {
+        myFunction();
+    };
+
+    function myFunction() {
+        if (window.pageYOffset > 150) {
+            setSticky(true);
+        } else {
+            setSticky(false);
+        }
+    }
+
+    return (
+        <StickyContext.Provider value={{ sticky }}>
+            <Container sticky={sticky} {...restProps}>
+                {children}
+            </Container>
+        </StickyContext.Provider>
+    );
 };
 
 Header.Title = function HeaderTitle({ children, ...restProps }) {
@@ -32,7 +54,13 @@ Header.SubTitle = function HeaderSubTitle({ children, ...restProps }) {
 };
 
 Header.Nav = function HeaderNav({ children, ...restProps }) {
-    return <Nav {...restProps}>{children}</Nav>;
+    const { sticky } = useContext(StickyContext);
+
+    return (
+        <Nav sticky={sticky} {...restProps}>
+            {children}
+        </Nav>
+    );
 };
 
 Header.Menu = function HeaderMenu({ children, ...restProps }) {
@@ -40,7 +68,13 @@ Header.Menu = function HeaderMenu({ children, ...restProps }) {
 };
 
 Header.MenuButton = function HeaderMenuButton({ children, ...restProps }) {
-    return <MenuButton {...restProps}>{children}</MenuButton>;
+    const { sticky } = useContext(StickyContext);
+
+    return (
+        <MenuButton sticky={sticky} {...restProps}>
+            {children}
+        </MenuButton>
+    );
 };
 
 Header.Logo = function HeaderLogo({ ...restProps }) {
