@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Background = styled.div`
-    background-color: #fffacd;
+    background-color: #fff0c0;
     position: relative;
     overflow: hidden;
 `;
@@ -34,8 +34,16 @@ export const Nav = styled.div`
     box-shadow: ${({ sticky }) =>
         sticky && '0px 0px 18px 1px rgba(0, 0, 0, 0.2)'};
     background-color: ${({ sticky }) => sticky && '#fff'};
-    padding-left: ${({ sticky }) => sticky && '90px'};
-    padding-right: ${({ sticky }) => sticky && '90px'};
+    transition: ${({ sticky }) => sticky && 'all 0.5s ease'};
+`;
+
+export const NavSticky = styled.div`
+    display: flex;
+    flex: 1;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
 `;
 
 export const Logo = styled.img`

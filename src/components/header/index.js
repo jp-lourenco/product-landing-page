@@ -14,6 +14,7 @@ import {
     BuyButton,
     Background,
     ArtOverflow,
+    NavSticky,
 } from './styles/header';
 
 export const StickyContext = createContext();
@@ -30,7 +31,7 @@ Header.Container = function HeaderContainer({ children, ...restProps }) {
     };
 
     function myFunction() {
-        if (window.pageYOffset > 150) {
+        if (window.pageYOffset > 170) {
             setSticky(true);
         } else {
             setSticky(false);
@@ -57,7 +58,11 @@ Header.SubTitle = function HeaderSubTitle({ children, ...restProps }) {
 Header.Nav = function HeaderNav({ children, ...restProps }) {
     const { sticky } = useContext(StickyContext);
 
-    return (
+    return sticky ? (
+        <Nav sticky={sticky} {...restProps}>
+            <NavSticky>{children}</NavSticky>
+        </Nav>
+    ) : (
         <Nav sticky={sticky} {...restProps}>
             {children}
         </Nav>
