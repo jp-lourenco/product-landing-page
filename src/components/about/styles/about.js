@@ -55,6 +55,11 @@ export const TextContainer = styled.div`
     max-width: 540px;
     margin: 0 auto;
     align-items: flex-start;
+
+    @media screen and (max-width: 992px) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 `;
 
 export const TitleSection = styled.h2`
