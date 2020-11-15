@@ -78,25 +78,24 @@ export const ContainerItem = styled.div`
 
 const opacityOn1 = keyframes`
     0% {opacity: 0;}
-    10% {opacity: 0;}
   100% {opacity: 1;}
 `;
 
 const opacityOn2 = keyframes`
     0% {opacity: 0;}
-    30% {opacity: 0;}
+    20% {opacity: 0;}
   100% {opacity: 1;}
 `;
 
 const opacityOn3 = keyframes`
     0% {opacity: 0;}
-    50% {opacity: 0;}
+    40% {opacity: 0;}
   100% {opacity: 1;}
 `;
 
 const opacityOn4 = keyframes`
     0% {opacity: 0;}
-    70% {opacity: 0;}
+    60% {opacity: 0;}
   100% {opacity: 1;}
 `;
 
