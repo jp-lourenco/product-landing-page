@@ -3,6 +3,7 @@ import {
     Container,
     Nav,
     Menu,
+    MobileMenu,
     MenuButton,
     Title,
     SubTitle,
@@ -18,6 +19,8 @@ import {
 } from './styles/header';
 
 export const StickyContext = createContext();
+
+export const MobileMenuContext = createContext();
 
 export default function Header({ children, ...restProps }) {
     return <Background {...restProps}>{children}</Background>;
@@ -57,27 +60,55 @@ Header.SubTitle = function HeaderSubTitle({ children, ...restProps }) {
 
 Header.Nav = function HeaderNav({ children, ...restProps }) {
     const { sticky } = useContext(StickyContext);
+    const [toggle, setToggle] = useState(false);
 
     return sticky ? (
-        <Nav sticky={sticky} {...restProps}>
-            <NavSticky>{children}</NavSticky>
-        </Nav>
+        <MobileMenuContext.Provider value={{ toggle, setToggle }}>
+            <Nav sticky={sticky} {...restProps}>
+                <NavSticky>{children}</NavSticky>
+            </Nav>
+        </MobileMenuContext.Provider>
     ) : (
-        <Nav sticky={sticky} {...restProps}>
-            {children}
-        </Nav>
+        <MobileMenuContext.Provider value={{ toggle, setToggle }}>
+            <Nav sticky={sticky} {...restProps}>
+                {children}
+            </Nav>
+        </MobileMenuContext.Provider>
     );
 };
 
 Header.Menu = function HeaderMenu({ children, ...restProps }) {
-    return <Menu {...restProps}>{children}</Menu>;
+    const { toggle } = useContext(MobileMenuContext);
+
+    return (
+        <Menu toggle={toggle} {...restProps}>
+            {children}
+        </Menu>
+    );
+};
+
+Header.MobileMenu = function HeaderMobileMenu({ children, ...restProps }) {
+    const { toggle, setToggle } = useContext(MobileMenuContext);
+    const { sticky } = useContext(StickyContext);
+
+    return (
+        <MobileMenu
+            sticky={sticky}
+            toggle={toggle}
+            onClick={() => setToggle(!toggle)}
+            {...restProps}
+        >
+            {children}
+        </MobileMenu>
+    );
 };
 
 Header.MenuButton = function HeaderMenuButton({ children, ...restProps }) {
     const { sticky } = useContext(StickyContext);
+    const { toggle } = useContext(MobileMenuContext);
 
     return (
-        <MenuButton sticky={sticky} {...restProps}>
+        <MenuButton sticky={sticky} toggle={toggle} {...restProps}>
             {children}
         </MenuButton>
     );

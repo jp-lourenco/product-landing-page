@@ -18,6 +18,9 @@ const HeaderContainer = () => {
                         <Header.MenuButton>Testimonial</Header.MenuButton>
                         <Header.MenuButton>Contact</Header.MenuButton>
                     </Header.Menu>
+                    <Header.MobileMenu>
+                        <i className="fa fa-bars"></i>
+                    </Header.MobileMenu>
                 </Header.Nav>
                 <Header.Art />
                 <Header.WelcomeContainer>

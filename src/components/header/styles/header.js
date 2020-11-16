@@ -17,6 +17,10 @@ export const Container = styled.div`
         max-width: 768px;
         min-width: 390px;
     }
+
+    @media (max-width: 1092px) {
+        max-width: 898px;
+    }
 `;
 
 export const Nav = styled.div`
@@ -44,20 +48,30 @@ export const NavSticky = styled.div`
     margin: 0 auto;
     padding: 0 15px;
     justify-content: space-between;
+    align-items: center;
 `;
 
 export const Logo = styled.img`
     height: 80px;
     width: 80px;
-    float: left;
     cursor: pointer;
 `;
 
 export const Menu = styled.div`
-    display: flex;
-    float: right;
-    align-items: center;
-    list-style: none;
+    @media screen and (max-width: 1092px) {
+        position: ${({ toggle }) => (toggle ? 'absolute' : 'relative')};
+        top: ${({ toggle }) => toggle && 0};
+        left: ${({ toggle }) => toggle && 0};
+        right: ${({ toggle }) => toggle && 0};
+        padding-top: ${({ toggle }) => toggle && 56};
+        background-color: ${({ toggle }) => toggle && 'white'};
+        padding: ${({ toggle }) => toggle && '10px'};
+        margin-top: ${({ toggle }) => toggle && '64px'};
+        align-items: ${({ toggle }) => toggle && 'center'};
+        height: ${({ toggle }) => toggle && '272px'};
+        display: block;
+        transition: ${({ toggle }) => toggle && 'all 0.3s ease-out'};
+    }
 `;
 
 export const MenuButton = styled.a`
@@ -70,9 +84,26 @@ export const MenuButton = styled.a`
     z-index: 11;
 
     @media screen and (max-width: 1092px) {
-        &:not(:first-child) {
-            display: none;
-        }
+        display: ${({ toggle }) => (toggle ? 'block' : 'none')};
+        color: ${({ toggle }) => (toggle ? '#444' : '#fff')};
+        padding: 5px;
+        text-align: center;
+    }
+`;
+
+export const MobileMenu = styled.a`
+    color: ${({ sticky }) => (sticky ? '#444' : '#fff')};
+    display: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 11;
+
+    @media screen and (max-width: 1092px) {
+        display: block;
+    }
+
+    i {
+        font-size: 25px;
     }
 `;
 
