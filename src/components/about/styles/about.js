@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.section`
     display: flex;
     flex-direction: row;
     max-width: 1140px;

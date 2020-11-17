@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-export const Background = styled.div`
+export const Background = styled.section`
     background-color: #fff0c0;
     position: relative;
     overflow: hidden;
@@ -23,7 +23,7 @@ export const Container = styled.div`
     }
 `;
 
-export const Nav = styled.div`
+export const Nav = styled.nav`
     display: flex;
     flex: 1;
     align-items: center;
@@ -68,7 +68,7 @@ export const Menu = styled.div`
         padding: ${({ toggle }) => toggle && '10px'};
         margin-top: ${({ toggle }) => toggle && '60px'};
         align-items: ${({ toggle }) => toggle && 'center'};
-        height: ${({ toggle }) => toggle && '272px'};
+        height: ${({ toggle }) => toggle && '165px'};
         display: block;
         transition: ${({ toggle }) => toggle && 'all 0.3s ease-out'};
     }
@@ -88,6 +88,10 @@ export const MenuButton = styled.a`
         color: ${({ toggle }) => (toggle ? '#444' : '#fff')};
         padding: 5px;
         text-align: center;
+    }
+
+    &.current {
+        color: #000099;
     }
 `;
 

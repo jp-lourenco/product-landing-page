@@ -8,7 +8,9 @@ const HeaderContainer = () => {
                 <Header.Nav>
                     <Header.Logo src={'assets/images/flooop.png'} />
                     <Header.Menu>
-                        <Header.MenuButton href="#home">Home</Header.MenuButton>
+                        <Header.MenuButton className="current" href="#home">
+                            Home
+                        </Header.MenuButton>
                         <Header.MenuButton href="#features">
                             Features
                         </Header.MenuButton>
@@ -18,9 +20,9 @@ const HeaderContainer = () => {
                         <Header.MenuButton href="#video">
                             Video
                         </Header.MenuButton>
-                        <Header.MenuButton>Faq</Header.MenuButton>
+                        {/* <Header.MenuButton>Faq</Header.MenuButton>
                         <Header.MenuButton>Testimonial</Header.MenuButton>
-                        <Header.MenuButton>Contact</Header.MenuButton>
+                        <Header.MenuButton>Contact</Header.MenuButton> */}
                     </Header.Menu>
                     <Header.MobileMenu>
                         <i className="fa fa-bars"></i>

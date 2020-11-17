@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-export const Background = styled.div`
+export const Background = styled.section`
     position: relative;
     display: block;
     width: 100%;
@@ -24,7 +24,7 @@ export const Container = styled.div`
     max-width: 1140px;
     margin: 0 auto;
     align-items: center;
-    padding: 80px;
+    padding: 120px 80px;
     z-index: 1;
 
     @media screen and (max-width: 768px) {

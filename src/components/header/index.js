@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext } from 'react';
+import React, { useState, createContext, useContext, useEffect } from 'react';
 import {
     Container,
     Nav,
@@ -29,17 +29,33 @@ export default function Header({ children, ...restProps }) {
 Header.Container = function HeaderContainer({ children, ...restProps }) {
     const [sticky, setSticky] = useState(false);
 
-    window.onscroll = function () {
-        myFunction();
-    };
-
-    function myFunction() {
-        if (window.pageYOffset > 170) {
-            setSticky(true);
-        } else {
-            setSticky(false);
-        }
-    }
+    useEffect(() => {
+        const mainSections = document.querySelectorAll('section');
+        window.addEventListener('scroll', () => {
+            let mainNavLinks = document.querySelectorAll('nav div a');
+            if (window.pageYOffset > 170) {
+                setSticky(true);
+            } else {
+                setSticky(false);
+            }
+            let fromTop = window.scrollY;
+            mainNavLinks.forEach((link, i) => {
+                if (i < 4) {
+                    if (
+                        mainSections[i].offsetTop - 20 <= fromTop &&
+                        mainSections[i].offsetTop +
+                            mainSections[i].clientHeight -
+                            20 >
+                            fromTop
+                    ) {
+                        link.classList.add('current');
+                    } else {
+                        link.classList.remove('current');
+                    }
+                }
+            });
+        });
+    }, []);
 
     return (
         <StickyContext.Provider value={{ sticky }}>
