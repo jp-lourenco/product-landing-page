@@ -3,7 +3,7 @@ import { Video } from '../components';
 
 const VideoContainer = () => {
     return (
-        <Video>
+        <Video id="video">
             <Video.Container>
                 <Video.TextContainer>
                     <Video.Button>

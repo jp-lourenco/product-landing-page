@@ -3,7 +3,7 @@ import { About } from '../components';
 
 const AboutContainer = () => {
     return (
-        <About>
+        <About id="about">
             <About.ImageContainer>
                 <About.Image src={'assets/images/about.png'} />
             </About.ImageContainer>

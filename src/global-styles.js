@@ -10,6 +10,11 @@ html, body {
     font-size: 16px;
     overflow-x: hidden;
 }
+html {
+    // anchors
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
 body, h1, h2, p {
     padding: 0;
     margin: 0;

@@ -3,7 +3,7 @@ import { Header } from '../components';
 
 const HeaderContainer = () => {
     return (
-        <Header>
+        <Header id="home">
             <Header.Container>
                 <Header.Nav>
                     <Header.Logo src={'assets/images/flooop.png'} />
@@ -12,8 +12,12 @@ const HeaderContainer = () => {
                         <Header.MenuButton href="#features">
                             Features
                         </Header.MenuButton>
-                        <Header.MenuButton>About</Header.MenuButton>
-                        <Header.MenuButton>Product</Header.MenuButton>
+                        <Header.MenuButton href="#about">
+                            About
+                        </Header.MenuButton>
+                        <Header.MenuButton href="#video">
+                            Video
+                        </Header.MenuButton>
                         <Header.MenuButton>Faq</Header.MenuButton>
                         <Header.MenuButton>Testimonial</Header.MenuButton>
                         <Header.MenuButton>Contact</Header.MenuButton>

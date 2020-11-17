@@ -3,7 +3,7 @@ import { Feature } from '../components';
 
 const FeatureContainer = () => {
     return (
-        <Feature>
+        <Feature id="features">
             <Feature.Title>Features</Feature.Title>
             <Feature.SubTitle>Outstanding Features</Feature.SubTitle>
             <Feature.Span />
