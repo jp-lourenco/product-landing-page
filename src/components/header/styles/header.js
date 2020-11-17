@@ -66,7 +66,7 @@ export const Menu = styled.div`
         padding-top: ${({ toggle }) => toggle && 56};
         background-color: ${({ toggle }) => toggle && 'white'};
         padding: ${({ toggle }) => toggle && '10px'};
-        margin-top: ${({ toggle }) => toggle && '64px'};
+        margin-top: ${({ toggle }) => toggle && '60px'};
         align-items: ${({ toggle }) => toggle && 'center'};
         height: ${({ toggle }) => toggle && '272px'};
         display: block;

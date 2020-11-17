@@ -94,7 +94,6 @@ Header.MobileMenu = function HeaderMobileMenu({ children, ...restProps }) {
     return (
         <MobileMenu
             sticky={sticky}
-            toggle={toggle}
             onClick={() => setToggle(!toggle)}
             {...restProps}
         >
