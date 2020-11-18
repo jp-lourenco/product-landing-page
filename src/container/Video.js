@@ -6,7 +6,7 @@ const VideoContainer = () => {
         <Video id="video">
             <Video.Container>
                 <Video.TextContainer>
-                    <Video.Button>
+                    <Video.Button href="video">
                         <img src="/assets/icons/jogar.svg" alt="Play" />
                     </Video.Button>
                     <Video.Title>

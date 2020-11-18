@@ -74,7 +74,7 @@ About.Li = function AboutLi({ children, ...restProps }) {
     return (
         <>
             <Li {...restProps}>
-                <Icon src={'/assets/icons/verifica.svg'} />
+                <Icon src={'/assets/icons/verifica.svg'} alt="verifica" />
                 {children}
             </Li>
         </>

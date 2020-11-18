@@ -22,8 +22,7 @@ const jump = keyframes`
 export const Image = styled.img`
     position: relative;
     width: 513px;
-    max-height: 485px;
-    height: auto;
+    height: 486px;
     animation: ${jump} 2s ease-in-out infinite;
     margin-top: 30px;
 `;

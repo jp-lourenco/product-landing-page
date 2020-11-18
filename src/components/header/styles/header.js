@@ -95,7 +95,7 @@ export const MenuButton = styled.a`
     }
 `;
 
-export const MobileMenu = styled.a`
+export const MobileMenu = styled.div`
     color: ${({ sticky }) => (sticky ? '#444' : '#fff')};
     display: none;
     padding: 15px;
@@ -243,8 +243,7 @@ export const WelcomeImage = styled.img`
     position: relative;
     width: 370px;
     margin-right: 75px;
-    max-height: 575px;
-    height: auto;
+    height: 575px;
     animation: ${jump} 2s ease-in-out infinite;
 
     @media (max-width: 992px) {

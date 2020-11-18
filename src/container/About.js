@@ -5,7 +5,7 @@ const AboutContainer = () => {
     return (
         <About id="about">
             <About.ImageContainer>
-                <About.Image src={'assets/images/about.png'} />
+                <About.Image src={'assets/images/about.png'} alt="Phone" />
             </About.ImageContainer>
             <About.TextContainer>
                 <About.TitleSection>About Product</About.TitleSection>

@@ -25,6 +25,7 @@ export const Title = styled.h2`
 export const SubTitle = styled.p`
     text-transform: capitalize;
     font-size: 40px;
+    text-align: center;
     color: #000;
     font-family: inherit;
     font-weight: 700;

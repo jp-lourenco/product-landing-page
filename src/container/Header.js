@@ -6,7 +6,10 @@ const HeaderContainer = () => {
         <Header id="home">
             <Header.Container>
                 <Header.Nav>
-                    <Header.Logo src={'assets/images/flooop.png'} />
+                    <Header.Logo
+                        src={'assets/images/flooop.png'}
+                        alt="Flooop"
+                    />
                     <Header.Menu>
                         <Header.MenuButton className="current" href="#home">
                             Home
@@ -42,7 +45,10 @@ const HeaderContainer = () => {
                         <Header.BuyButton>Buy product</Header.BuyButton>
                     </Header.WelcomeText>
 
-                    <Header.WelcomeImage src={'assets/images/hero.png'} />
+                    <Header.WelcomeImage
+                        src={'assets/images/hero.png'}
+                        alt="Hero"
+                    />
                 </Header.WelcomeContainer>
             </Header.Container>
         </Header>
