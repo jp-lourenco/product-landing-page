@@ -91,7 +91,7 @@ export const MenuButton = styled.a`
     }
 
     &.current {
-        color: #000099;
+        color: ${({ sticky }) => sticky && 'orange'};
     }
 `;
 
