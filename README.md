@@ -2,7 +2,7 @@
 
 Product Landing Page build with React and styled-components.
 
-![Test Image 1](https://github.com/jp-lourenco/product-landing-page/tree/master/screen.png)
+![Test Image 1](https://github.com/jp-lourenco/product-landing-page/tree/master/screen.jpg)
 
 ## License
 
