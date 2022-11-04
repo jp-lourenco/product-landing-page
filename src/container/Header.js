@@ -7,7 +7,7 @@ const HeaderContainer = () => {
             <Header.Container>
                 <Header.Nav>
                     <Header.Logo
-                        src={'assets/images/flooop.png'}
+                        src={'assets/images/mr_panda_logo.png'}
                         alt="Flooop"
                     />
                     <Header.Menu>
@@ -15,13 +15,13 @@ const HeaderContainer = () => {
                             Home
                         </Header.MenuButton>
                         <Header.MenuButton href="#features">
-                            Features
+                            Valores
                         </Header.MenuButton>
                         <Header.MenuButton href="#about">
-                            About
+                            Sobre
                         </Header.MenuButton>
                         <Header.MenuButton href="#video">
-                            Video
+                            Produtos
                         </Header.MenuButton>
                         {/* <Header.MenuButton>Faq</Header.MenuButton>
                         <Header.MenuButton>Testimonial</Header.MenuButton>
@@ -35,18 +35,16 @@ const HeaderContainer = () => {
                 <Header.WelcomeContainer>
                     <Header.WelcomeText>
                         <Header.Title>
-                            Best & Smart Digital Product
+                            Mr. Panda
                         </Header.Title>
                         <Header.SubTitle>
-                            Donec nec justo eget felis facilisis fermentum.
-                            Aliquam porttitor mauris sit amet orci. Aenean
-                            dignissim pellentesque felis.
+                            A Mr. Panda foi fundada em 2021 por Maicon Crefta e Marlon Crefta, dois irmãos que buscam inovar e superar as expectativas dos fumadores.
                         </Header.SubTitle>
-                        <Header.BuyButton>Buy product</Header.BuyButton>
+                        <Header.BuyButton>Carregando...</Header.BuyButton>
                     </Header.WelcomeText>
 
                     <Header.WelcomeImage
-                        src={'assets/images/hero.png'}
+                        src={'assets/images/logo.png'}
                         alt="Hero"
                     />
                 </Header.WelcomeContainer>

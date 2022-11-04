@@ -10,14 +10,14 @@ const VideoContainer = () => {
                         <img src="/assets/icons/jogar.svg" alt="Play" />
                     </Video.Button>
                     <Video.Title>
-                        Best Product For You. Check The Demo Video.
+                        Os melhores produtos para você.
                     </Video.Title>
                     <Video.Span />
                     <Video.Text>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit. Donec odio. Quisque volutpat mattis eros. Nullam
-                        malesuada erat ut turpis. Suspendisse urna nibh, viverra
-                        non, semper suscipit, posuere a, pede.
+                        Contamos especialmente com os nossos clientes para 
+                        o desenvolvimento, sempre abertos para receber novas 
+                        críticas e recomendações, sendo essencial para melhoria 
+                        do serviço.
                     </Video.Text>
                 </Video.TextContainer>
             </Video.Container>

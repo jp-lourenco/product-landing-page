@@ -5,8 +5,8 @@ const FooterContainer = () => {
     return (
         <Footer>
             <Footer.Content>
-                <Footer.TextLogo>Flooop</Footer.TextLogo>
-                <Footer.Copyright>Copyright Flooop © 2020.</Footer.Copyright>
+                <Footer.TextLogo>MR. PANDA</Footer.TextLogo>
+                <Footer.Copyright>Copyright Mr. Panda © 2022.</Footer.Copyright>
                 <Footer.ItemContainer>
                     <Footer.Item href="facebook">
                         <i className="fa fa-facebook" />

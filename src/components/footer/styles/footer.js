@@ -13,8 +13,8 @@ export const Container = styled.footer`
     margin: 80px auto 0;
     align-items: center;
     background-size: 500% 100%;
-    background-color: #ff4e00;
-    background-image: linear-gradient(45deg, #ff4e00 30%, orange 50%);
+    background-color: #11A4FF;
+    background-image: linear-gradient(45deg, #2c7bab 30%, #11A4FF 50%);
     animation: ${bruh} 4s linear infinite;
 
     svg {
@@ -110,7 +110,7 @@ export const Item = styled.a`
 
     i {
         font-size: 16px;
-        color: orange;
+        color: #11A4FF;
         transform: rotate(45deg);
     }
 `;

@@ -4,8 +4,8 @@ import { Feature } from '../components';
 const FeatureContainer = () => {
     return (
         <Feature id="features">
-            <Feature.Title>Features</Feature.Title>
-            <Feature.SubTitle>Outstanding Features</Feature.SubTitle>
+            <Feature.Title>Valores</Feature.Title>
+            <Feature.SubTitle>Valores da empresa</Feature.SubTitle>
             <Feature.Span />
             <Feature.ContainerItem>
                 <Feature.Item>
@@ -14,7 +14,7 @@ const FeatureContainer = () => {
                     </Feature.IconContainer>
                     <Feature.FeatureText>
                         <Feature.FeatureTitle>
-                            Virtual Surround
+                            Proatividade
                         </Feature.FeatureTitle>
                         <Feature.FeatureSubTitle>
                             Donec nec justo eget felis facilisis fermentum.
@@ -31,7 +31,7 @@ const FeatureContainer = () => {
                     </Feature.IconContainer>
                     <Feature.FeatureText>
                         <Feature.FeatureTitle>
-                            Noise Cancelling
+                            Qualidade
                         </Feature.FeatureTitle>
                         <Feature.FeatureSubTitle>
                             Donec nec justo eget felis facilisis fermentum.
@@ -45,7 +45,7 @@ const FeatureContainer = () => {
                     </Feature.IconContainer>
                     <Feature.FeatureText>
                         <Feature.FeatureTitle>
-                            Sound Control
+                            Ética
                         </Feature.FeatureTitle>
                         <Feature.FeatureSubTitle>
                             Donec nec justo eget felis facilisis fermentum.
@@ -59,7 +59,7 @@ const FeatureContainer = () => {
                     </Feature.IconContainer>
                     <Feature.FeatureText>
                         <Feature.FeatureTitle>
-                            Wireless Freedom
+                            Respeito
                         </Feature.FeatureTitle>
                         <Feature.FeatureSubTitle>
                             Donec nec justo eget felis facilisis fermentum.

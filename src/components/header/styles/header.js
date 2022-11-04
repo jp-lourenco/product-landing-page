@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Background = styled.section`
-    background-color: #fff0c0;
+    background-color: #c0fff8;
     position: relative;
     overflow: hidden;
 `;
@@ -53,7 +53,7 @@ export const NavSticky = styled.div`
 
 export const Logo = styled.img`
     height: 80px;
-    width: 80px;
+    width: 350px;
     cursor: pointer;
 `;
 
@@ -91,7 +91,7 @@ export const MenuButton = styled.a`
     }
 
     &.current {
-        color: ${({ sticky }) => sticky && 'orange'};
+        color: ${({ sticky }) => sticky && '#11A4FF'};
     }
 `;
 
@@ -122,7 +122,7 @@ export const ArtOverflow = styled.div`
 export const Art = styled.div`
     position: absolute;
     z-index: 0;
-    background: orange none repeat scroll 0 0;
+    background: #11A4FF none repeat scroll 0 0;
     right: 0px;
     bottom: 0px;
     height: 180%;
@@ -186,7 +186,8 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.p`
     font-size: 18px;
-    color: #777;
+    color: #444;
+    font-weight: 500;
     line-height: 26px;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -215,7 +216,7 @@ export const BuyButton = styled.button`
     align-items: center;
     width: 160px;
     height: 45px;
-    background: linear-gradient(45deg, orange 10%, red 90%);
+    background: linear-gradient(45deg, #11A4FF 10%, green 90%);
     padding: 0px 35px;
     margin-left: 5px;
     text-transform: uppercase;
@@ -241,20 +242,19 @@ const jump = keyframes`
 
 export const WelcomeImage = styled.img`
     position: relative;
-    width: 370px;
-    margin-right: 75px;
+    width: 575px;
     height: 575px;
     animation: ${jump} 2s ease-in-out infinite;
 
     @media (max-width: 992px) {
         margin-right: 0;
-        width: 250px;
+        width: 390px;
         max-height: 390px;
     }
 
     @media (max-width: 1200px) and (min-width: 993px) {
         margin-right: 75px;
-        width: 330px;
+        width: 515px;
         max-height: 515px;
     }
 `;

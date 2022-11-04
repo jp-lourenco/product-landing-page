@@ -4,7 +4,7 @@ export const Background = styled.section`
     position: relative;
     display: block;
     width: 100%;
-    background: url('assets/images/bg_video.png') no-repeat fixed 0 0 / cover;
+    background: url('assets/images/back.png') no-repeat fixed 0 0 / cover;
 
     &:before {
         position: absolute;
@@ -13,7 +13,7 @@ export const Background = styled.section`
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(255, 165, 0, 0.5) none repeat scroll 0 0;
+        background: url('assets/images/back.png') none repeat scroll 0 0;
     }
 `;
 
@@ -59,7 +59,7 @@ export const TextContainer = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background: orange none repeat scroll 0 0;
+        background: #11A4FF none repeat scroll 0 0;
         transform: rotate(-5deg);
         border-radius: 30px;
         z-index: -1;
@@ -82,7 +82,7 @@ export const Button = styled.a`
     text-align: center;
     line-height: 70px;
     position: relative;
-    background: orange;
+    background: #c0fff8;
     color: #fff;
     border-radius: 100px;
     z-index: 1;
@@ -93,7 +93,7 @@ export const Button = styled.a`
         content: '';
         width: 80px;
         height: 80px;
-        background-color: rgba(255, 165, 0, 0.5);
+        background-color: #11A4FF;
         position: absolute;
         left: -5px;
         border-radius: 50%;
@@ -105,7 +105,7 @@ export const Button = styled.a`
         content: '';
         width: 90px;
         height: 90px;
-        background-color: rgba(255, 185, 0, 0.6);
+        background-color: #74c8fc;
         position: absolute;
         left: -10px;
         border-radius: 50%;
@@ -114,7 +114,7 @@ export const Button = styled.a`
     }
 
     &:hover {
-        background: orangered;
+        background: #11A4FF;
         cursor: pointer;
         animation: ${spin} 0.3s ease-in-out 1;
     }
@@ -144,7 +144,7 @@ export const Title = styled.h2`
 
 export const Text = styled.p`
     font-size: 16px;
-    color: #434a7e;
+    color: #11A4FF;
     line-height: 26px;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -170,7 +170,7 @@ export const Span = styled.span`
     margin: 0 auto;
     height: 5px;
     border-radius: 30px;
-    background-color: orange;
+    background-color: #11A4FF;
     background-size: 200% 200%;
     width: 90px;
     margin-top: 5px;

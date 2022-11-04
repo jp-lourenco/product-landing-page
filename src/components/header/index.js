@@ -42,10 +42,10 @@ Header.Container = function HeaderContainer({ children, ...restProps }) {
             mainNavLinks.forEach((link, i) => {
                 if (i < 4) {
                     if (
-                        mainSections[i].offsetTop - 20 <= fromTop &&
+                        mainSections[i].offsetTop - 40 <= fromTop &&
                         mainSections[i].offsetTop +
                             mainSections[i].clientHeight -
-                            20 >
+                            40 >
                             fromTop
                     ) {
                         link.classList.add('current');

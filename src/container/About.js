@@ -5,31 +5,30 @@ const AboutContainer = () => {
     return (
         <About id="about">
             <About.ImageContainer>
-                <About.Image src={'assets/images/about.png'} alt="Phone" />
+                <About.Image src={'assets/images/panda.png'} alt="Phone" />
             </About.ImageContainer>
             <About.TextContainer>
-                <About.TitleSection>About Product</About.TitleSection>
+                <About.TitleSection>Sobre a empresa</About.TitleSection>
                 <About.Title>
-                    Awesome digital product can make your life easier
+                    Uma empresa com valores e princípios éticos
                 </About.Title>
                 <About.Span />
                 <About.Text>
-                    Donec nec justo eget felis facilisis fermentum. Aliquam
-                    porttitor mauris sit amet orci.
+                    No momento, não só como loja mas também como uma marca, 
+                    especializada em filtros de vidro artesanal, 
+                    como símbolo de qualidade e garantia dos produtos comercializados.
                 </About.Text>
                 <About.Text>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                    erat ut turpis.Donec nec justo eget felis facilisis
-                    fermentum.
+                    Exclusivamente online, a Mr. Panda Smoke Shop 
+                    dispõe-se de alguns produtos para revendedores do ramo.
                 </About.Text>
                 <About.Ul>
-                    <About.Li>Wireless Connection Headphones</About.Li>
+                    <About.Li>Filtros de vidro</About.Li>
                     <About.Li>
-                        High-quality audio with DSEE HX™ and LDAC.
+                        Mortalhas
                     </About.Li>
-                    <About.Li>Noise Cancelling without distractions.</About.Li>
-                    <About.Li>Wireless freedom with BLUETOOTH</About.Li>
+                    <About.Li>Sopeiras</About.Li>
+                    <About.Li>Slicks</About.Li>
                 </About.Ul>
             </About.TextContainer>
         </About>

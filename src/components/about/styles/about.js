@@ -21,10 +21,9 @@ const jump = keyframes`
 
 export const Image = styled.img`
     position: relative;
-    width: 513px;
-    height: 486px;
+    width: 575px;
+    height: 575px;
     animation: ${jump} 2s ease-in-out infinite;
-    margin-top: 30px;
 `;
 
 const opacityOn = keyframes`
@@ -39,9 +38,9 @@ const opacityOn = keyframes`
 `;
 
 export const ImageContainer = styled.div`
-    width: 570px;
-    padding: 0 15px;
-    height: 500px;
+    width: 650px;
+    padding: 0;
+    height: 575px;
     align-items: center;
     animation: ${opacityOn} 2.5s ease 1;
     animation-play-state: ${({ scrollPosition }) =>
@@ -65,8 +64,8 @@ export const TitleSection = styled.h2`
     display: inline-block;
     text-transform: uppercase;
     font-size: 15px;
-    background-color: rgba(255, 165, 0, 0.5);
-    color: orange;
+    background-color: #c0fff8;
+    color: #11A4FF;
     padding: 5px 16px;
     border-radius: 4px;
     font-weight: 200;
@@ -77,7 +76,7 @@ export const TitleSection = styled.h2`
 
 export const Text = styled.div`
     font-size: 16px;
-    color: #434a7e;
+    color: #11A4FF;
     line-height: 26px;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 10px;
@@ -111,7 +110,6 @@ export const Li = styled.li`
 export const Title = styled.h3`
     font-weight: 700;
     color: #000;
-    text-transform: capitalize;
     font-size: 35px;
     margin-bottom: 15px;
     line-height: 50px;
@@ -130,7 +128,7 @@ export const Span = styled.span`
     position: relative;
     height: 5px;
     border-radius: 30px;
-    background-color: orange;
+    background-color: #11A4FF;
     background-size: 200% 200%;
     width: 90px;
     margin-top: 5px;
