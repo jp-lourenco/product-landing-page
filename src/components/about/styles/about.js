@@ -65,8 +65,8 @@ export const TitleSection = styled.h2`
     display: inline-block;
     text-transform: uppercase;
     font-size: 15px;
-    background-color: rgba(255, 165, 0, 0.5);
-    color: orange;
+    background-color: rgba(16, 97, 129, 0.5);
+    color: rgba(16, 97, 129, 1);
     padding: 5px 16px;
     border-radius: 4px;
     font-weight: 200;
@@ -130,7 +130,7 @@ export const Span = styled.span`
     position: relative;
     height: 5px;
     border-radius: 30px;
-    background-color: orange;
+    background-color: #51719C;
     background-size: 200% 200%;
     width: 90px;
     margin-top: 5px;

@@ -12,8 +12,8 @@ export const Title = styled.h2`
     display: inline-block;
     text-transform: uppercase;
     font-size: 15px;
-    background-color: rgba(255, 165, 0, 0.5);
-    color: orange;
+    background-color: rgba(16, 97, 129, 0.5);
+    color: rgba(16, 97, 129, 1);
     padding: 5px 16px;
     border-radius: 4px;
     font-weight: 200;
@@ -47,7 +47,7 @@ export const Span = styled.span`
     margin: 0 auto;
     height: 5px;
     border-radius: 30px;
-    background-color: orange;
+    background-color: #51719C;
     background-size: 200% 200%;
     width: 90px;
     margin-top: 5px;
@@ -134,7 +134,7 @@ export const IconContainer = styled.div`
     width: 80px;
     height: 80px;
     margin: 0 auto;
-    background-color: orange;
+    background-color: #51719C;
     line-height: 100px;
     border-radius: 5px;
     -webkit-transform: rotate(-45deg);
@@ -160,7 +160,7 @@ export const IconContainer = styled.div`
         content: '';
         width: 100px;
         height: 100px;
-        background-color: rgba(255, 165, 0, 0.5);
+        background-color: rgba(16, 97, 129, 0.5);
         position: absolute;
         left: -10px;
         border-radius: 5px;
@@ -172,7 +172,7 @@ export const IconContainer = styled.div`
         content: '';
         width: 90px;
         height: 90px;
-        background-color: rgba(255, 165, 0, 0.7);
+        background-color: rgba(16, 97, 129, 0.5);
         position: absolute;
         left: -5px;
         top: -5px;

@@ -21,7 +21,7 @@ body, h1, h2, p {
 }
 *, *::after, *::before {
     box-sizing: border-box;
-    //border: 1px solid red;
+    //border: 1px solid #51719C;
 }
 `;
 

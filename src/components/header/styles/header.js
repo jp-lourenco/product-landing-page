@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Background = styled.section`
-    background-color: #fff0c0;
+    background-color: #F2F2F3;
     position: relative;
     overflow: hidden;
 `;
@@ -91,7 +91,7 @@ export const MenuButton = styled.a`
     }
 
     &.current {
-        color: ${({ sticky }) => sticky && 'orange'};
+        color: ${({ sticky }) => sticky && '#51719C'};
     }
 `;
 
@@ -122,7 +122,7 @@ export const ArtOverflow = styled.div`
 export const Art = styled.div`
     position: absolute;
     z-index: 0;
-    background: orange none repeat scroll 0 0;
+    background: #51719C none repeat scroll 0 0;
     right: 0px;
     bottom: 0px;
     height: 180%;
@@ -172,15 +172,15 @@ export const WelcomeText = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-size: 70px;
+    font-size: 60px;
     margin-bottom: 20px;
-    line-height: 90px;
+    line-height: 75px;
     font-weight: 700;
     font-family: inherit;
 
     @media (max-width: 992px) {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 45px;
+        line-height: 45px;
     }
 `;
 
@@ -215,7 +215,7 @@ export const BuyButton = styled.button`
     align-items: center;
     width: 160px;
     height: 45px;
-    background: linear-gradient(45deg, orange 10%, red 90%);
+    background: linear-gradient(45deg, #51719C 10%, #51719C 90%);
     padding: 0px 35px;
     margin-left: 5px;
     text-transform: uppercase;
@@ -241,20 +241,19 @@ const jump = keyframes`
 
 export const WelcomeImage = styled.img`
     position: relative;
-    width: 370px;
-    margin-right: 75px;
+    width: 575px;
     height: 575px;
     animation: ${jump} 2s ease-in-out infinite;
 
     @media (max-width: 992px) {
         margin-right: 0;
-        width: 250px;
-        max-height: 390px;
+        width: 420px;
+        max-height: 420px;
     }
 
     @media (max-width: 1200px) and (min-width: 993px) {
         margin-right: 75px;
-        width: 330px;
-        max-height: 515px;
+        width: 555px;
+        max-height: 555px;
     }
 `;

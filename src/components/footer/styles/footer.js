@@ -13,8 +13,8 @@ export const Container = styled.footer`
     margin: 80px auto 0;
     align-items: center;
     background-size: 500% 100%;
-    background-color: #ff4e00;
-    background-image: linear-gradient(45deg, #ff4e00 30%, orange 50%);
+    background-color: #106181;
+    background-image: linear-gradient(45deg, #106181 30%, #51719C 50%);
     animation: ${bruh} 4s linear infinite;
 
     svg {
@@ -100,7 +100,7 @@ export const Item = styled.a`
         content: '';
         width: 50px;
         height: 50px;
-        background-color: rgba(254, 254, 254, 0.29);
+        background-color: rgba(16, 97, 129, 0.2);
         position: absolute;
         left: -10px;
         border-radius: 5px;
@@ -110,7 +110,7 @@ export const Item = styled.a`
 
     i {
         font-size: 16px;
-        color: orange;
+        color: #51719C;
         transform: rotate(45deg);
     }
 `;

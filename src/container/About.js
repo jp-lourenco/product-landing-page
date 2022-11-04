@@ -5,31 +5,32 @@ const AboutContainer = () => {
     return (
         <About id="about">
             <About.ImageContainer>
-                <About.Image src={'assets/images/about.png'} alt="Phone" />
+                <About.Image src={'assets/images/hero.png'} alt="Phone" />
             </About.ImageContainer>
             <About.TextContainer>
-                <About.TitleSection>About Product</About.TitleSection>
+                <About.TitleSection>Sobre</About.TitleSection>
                 <About.Title>
-                    Awesome digital product can make your life easier
+                    A Salus Vacinação antifurto
                 </About.Title>
                 <About.Span />
                 <About.Text>
-                    Donec nec justo eget felis facilisis fermentum. Aliquam
-                    porttitor mauris sit amet orci.
+                    Realiza marcação veicular afim de agregar maior 
+                    segurança ao patrimônio do proprietário da empresa, 
+                    visando garantir a segurança do colaborador e de sua frota.
                 </About.Text>
                 <About.Text>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                    erat ut turpis.Donec nec justo eget felis facilisis
-                    fermentum.
+                    Atendendo aos transportadores com padrão de qualidade, 
+                    em qualquer região com mais excelência na prestação desse serviço.
+                    Oferecendo segurança e tranquilidade para motoristas e proprietários. 
+                    Com baixo custo e sem a necessidade de manutenção.
                 </About.Text>
                 <About.Ul>
-                    <About.Li>Wireless Connection Headphones</About.Li>
+                    <About.Li>Reduz o risco de furto</About.Li>
                     <About.Li>
-                        High-quality audio with DSEE HX™ and LDAC.
+                        Baixo custo
                     </About.Li>
-                    <About.Li>Noise Cancelling without distractions.</About.Li>
-                    <About.Li>Wireless freedom with BLUETOOTH</About.Li>
+                    <About.Li>Maior controle de peças</About.Li>
+                    <About.Li>Marcação na placa do veículo</About.Li>
                 </About.Ul>
             </About.TextContainer>
         </About>

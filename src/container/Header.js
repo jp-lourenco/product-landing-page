@@ -7,18 +7,18 @@ const HeaderContainer = () => {
             <Header.Container>
                 <Header.Nav>
                     <Header.Logo
-                        src={'assets/images/flooop.png'}
+                        src={'assets/images/hero.png'}
                         alt="Flooop"
                     />
                     <Header.Menu>
                         <Header.MenuButton className="current" href="#home">
-                            Home
+                            Página inicial
                         </Header.MenuButton>
                         <Header.MenuButton href="#features">
-                            Features
+                            Processo
                         </Header.MenuButton>
                         <Header.MenuButton href="#about">
-                            About
+                            Sobre
                         </Header.MenuButton>
                         <Header.MenuButton href="#video">
                             Video
@@ -35,14 +35,13 @@ const HeaderContainer = () => {
                 <Header.WelcomeContainer>
                     <Header.WelcomeText>
                         <Header.Title>
-                            Best & Smart Digital Product
+                            Salus Vacinação Antifurto
                         </Header.Title>
                         <Header.SubTitle>
-                            Donec nec justo eget felis facilisis fermentum.
-                            Aliquam porttitor mauris sit amet orci. Aenean
-                            dignissim pellentesque felis.
+                            Evite roubos e proteja seu patrimonio sem mensalidades, auxiliando na negociação do seguro.
+                            Agende uma visita e saiba mais sobre a Vacinação.
                         </Header.SubTitle>
-                        <Header.BuyButton>Buy product</Header.BuyButton>
+                        <Header.BuyButton>Em breve</Header.BuyButton>
                     </Header.WelcomeText>
 
                     <Header.WelcomeImage

@@ -13,7 +13,7 @@ export const Background = styled.section`
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(255, 165, 0, 0.5) none repeat scroll 0 0;
+        background: rgba(16, 97, 129, 0.5) none repeat scroll 0 0;
     }
 `;
 
@@ -59,7 +59,7 @@ export const TextContainer = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background: orange none repeat scroll 0 0;
+        background: #51719C none repeat scroll 0 0;
         transform: rotate(-5deg);
         border-radius: 30px;
         z-index: -1;
@@ -82,7 +82,7 @@ export const Button = styled.a`
     text-align: center;
     line-height: 70px;
     position: relative;
-    background: orange;
+    background: #51719C;
     color: #fff;
     border-radius: 100px;
     z-index: 1;
@@ -93,7 +93,7 @@ export const Button = styled.a`
         content: '';
         width: 80px;
         height: 80px;
-        background-color: rgba(255, 165, 0, 0.5);
+        background-color: rgba(16, 97, 129, 0.5);
         position: absolute;
         left: -5px;
         border-radius: 50%;
@@ -105,7 +105,7 @@ export const Button = styled.a`
         content: '';
         width: 90px;
         height: 90px;
-        background-color: rgba(255, 185, 0, 0.6);
+        background-color: rgba(16, 97, 129, 0.7);
         position: absolute;
         left: -10px;
         border-radius: 50%;
@@ -114,7 +114,7 @@ export const Button = styled.a`
     }
 
     &:hover {
-        background: orangered;
+        background: #51719C;
         cursor: pointer;
         animation: ${spin} 0.3s ease-in-out 1;
     }
@@ -131,7 +131,7 @@ export const Title = styled.h2`
     text-transform: capitalize;
     font-size: 30px;
     color: #000;
-    font-family: inherit;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin-bottom: 15px;
     line-height: 50px;
@@ -170,7 +170,7 @@ export const Span = styled.span`
     margin: 0 auto;
     height: 5px;
     border-radius: 30px;
-    background-color: orange;
+    background-color: #51719C;
     background-size: 200% 200%;
     width: 90px;
     margin-top: 5px;
